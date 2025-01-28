@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="for.css">
+</head>
+
+<body>
+    <main>
+        <h1>formulaire de contact</h1>
+        <form style="display: flex;flex-direction: column; width: 50%; margin: auto;" action="POST">
+            <label for="">Nom:</label>
+            <input type="text" id="nom" name="nom" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="sujet">sujet:</label>
+            <select name="sujet" id="sujet" required>
+                <option value="">selctionnez un sujet</option>
+                <option value="">Questions</option>
+                <option value="">Demande</option>
+                <option value="">Autre</option>
+
+            </select>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="4"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <section>
+            <p>
+                Les Formulaires HTML permettent au user de'envoyer des données a un serveur
+            </p>
+            <h2>1. Structure d'un formulaire</h2>
+            <p>Un formaulaire est definie par la balise <code>form</code></p>
+            <h3>Explicatin des attributs</h3>
+            <p><strong><code>name</code></strong> : cet attribut est utilesé pour edentifiér un champ du formulaire.
+                Qand le formulaire est soumis , les données
+                sont envoy"es sous form de pair clé-valeur ou le <code>name</code> est la clé </p>
+            <p><strong><code>label for</code></strong>:l'attribut <code>for</code>du label est utiliser pour associer un
+                libellé a un champs via son <code>id</code></p>
+
+            <h2>2. type de champs</h2>
+
+            <p>HTML offre plusieurs types de champs:</p>
+
+            <p><code>text</code>--champs de text</p>
+            <p><code>email/</code>--champs de email</p>
+            <p><code>pasword</code>--champs de pasword</p>
+            <p><code>radio</code>--champs de radio</p>
+            <p><code>texterea </code>code>--zone de text</p>
+            <p><code>checkbox </code>code>--case a cocher</p>
+            <p><code>number</code>code>--entrée numerique</p>
+            <p><code>file</code>code>--upload de fichiers</p>
+            <p><code>submit</code>code>--button d'envoi</p>
+
+            <h2>3. Exemples de Formulaires</h2>
+            <p>Exemple avec différentes entrées :</p>
+            <pre>
+&lt;form&gt;
+    &lt;label&gt;Choisissez votre genre:&lt;/label&gt;
+    &lt;input type="radio" name="genre" value="homme"&gt; Homme
+    &lt;input type="radio" name="genre" value="femme"&gt; Femme
+    
+    &lt;label&gt;Acceptez-vous les conditions ?&lt;/label&gt;
+    &lt;input type="checkbox" name="conditions" required&gt;
+    
+    &lt;button type="submit"&gt;Valider&lt;/button&gt;
+&lt;/form&gt;
+    </pre>
+
+
+
+        </section>
+        <section>
+            <h2>4. SEO et les formulaires html</h2>
+            <p>Les formulaires jouent un role important en seo,notament pour l'experience utilisateur et l'accessibilité
+            </p>
+
+            <p><strong>label et for</strong>: améliorent l'accessibilité et la lisibilté pour les moteurs de recherche
+            </p>
+
+
+        </section>
+        <p><strong>input=nam</strong>: les champs bien nommés aident les outiles d'analyse du site</p>
+        <p><strong>l'attribut <code>
+
+        <h3>Exemple de formulaire optimisé SEO :</h3>
+    <pre>
+&lt;form action="traitement.php" method="POST"&gt;
+    &lt;label for="nom"&gt;Nom:&lt;/label&gt;
+    &lt;input type="text" id="nom" name="nom" placeholder="Votre nom" required&gt;
+    
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" placeholder="Votre email" required&gt;
+    
+    &lt;button type="submit"&gt;Envoyer&lt;/button&gt;
+&lt;/form&gt;
+    </pre>
+    </main>
+
+
+
+
+</body>
+</html>

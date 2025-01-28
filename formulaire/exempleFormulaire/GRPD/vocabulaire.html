@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours sur la Mise en Page et l'Encapsulation en HTML</title>
+    <meta name="description" content="Comprendre la mise en page et l'encapsulation des éléments en HTML et CSS.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Votre Nom">
+    <meta name="keywords" content="HTML, CSS, mise en page, encapsulation, div, structure">
+    <link rel="canonical" href="https://www.example.com/mise-en-page-encapsulation">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .header, .footer {
+            background-color: #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+        .main {
+            display: flex;
+            gap: 10px;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+        .content {
+            width: 70%;
+            background-color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cours sur la Mise en Page et l'Encapsulation en HTML</h1>
+        </div>
+ 
+        <div class="content">
+            <h2>Introduction</h2>
+            <p>La mise en page en HTML repose sur l'utilisation des balises de structure comme <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, et <code>&lt;article&gt;</code>. Ces balises permettent d'organiser les éléments d'une page de manière logique et flexible.</p>
+            
+            <h2>1. Qu'est-ce que l'Encapsulation en HTML ?</h2>
+            <p>L'encapsulation consiste à regrouper plusieurs éléments HTML au sein d'un même conteneur. Cela permet :</p>
+            <ul>
+                <li>De structurer le contenu de manière logique</li>
+                <li>De faciliter la gestion des styles CSS</li>
+                <li>D'améliorer la réutilisabilité des composants</li>
+            </ul>
+            
+            <h2>2. Exemple de Mise en Page avec Encapsulation</h2>
+            <p>Voici un exemple de mise en page utilisant des <code>&lt;div&gt;</code> pour organiser un site en trois parties : un en-tête, un contenu principal avec une barre latérale et un pied de page.</p>
+            
+            <pre>
+&lt;div class="container"&gt;
+    &lt;div class="header"&gt;
+        &lt;h1&gt;Titre du Site&lt;/h1&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="main"&gt;
+        &lt;div class="sidebar"&gt;
+            &lt;h2&gt;Menu&lt;/h2&gt;
+            &lt;p&gt;Liens et navigation&lt;/p&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="content"&gt;
+            &lt;h2&gt;Contenu Principal&lt;/h2&gt;
+            &lt;p&gt;Texte et images ici&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="footer"&gt;
+        &lt;p&gt;Pied de page - Mentions légales&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+            
+            <h2>3. Organisation et Styles CSS</h2>
+            <p>Pour donner un aspect visuel clair à cette structure, voici un exemple de styles CSS :</p>
+            <pre>
+.container {
+    width: 80%;
+    margin: auto;
+}
+.header, .footer {
+    background-color: #ddd;
+    padding: 15px;
+    text-align: center;
+}
+.main {
+    display: flex;
+    gap: 10px;
+}
+.sidebar {
+    width: 30%;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+.content {
+    width: 70%;
+    background-color: white;
+    padding: 15px;
+}
+            </pre>
+            
+            <h2>Conclusion</h2>
+            <p>Grâce à l'encapsulation et à une bonne organisation de la mise en page, il est possible de structurer un site de manière efficace et réutilisable. L'utilisation de <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>, et autres balises de structuration permet d'obtenir un rendu clair et adaptable sur différents supports.</p>
+        </div>
+    </div>
+</body>
+</html>
